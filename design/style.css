@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:FuturaDemiC;
+    src: url(./fonts/futurademic-webfont.woff2);
+}
+@font-face {
+    font-family: Futura PT;
+    src: url(./fonts/futurabookc-webfont.woff2);
+}
+
 
 body {
     margin: 0;
@@ -57,10 +66,10 @@ p+p {
     align-items: center;
     justify-content: center;
 
+    /*font-family: FuturaDemiC;*/
     font-weight: 600;
     font-size: 18px;
-    text-transform: uppercase;
-    /* font-family: FuturaDemic;*/
+
 
     width: 216px;
     height: 46px;
@@ -86,6 +95,7 @@ p+p {
     justify-content: space-between;
     align-items: center;
 
+
 }
 
 .header_list {
@@ -110,7 +120,8 @@ p+p {
     min-height: 100vh;
 
     margin-top: -118px;
-    padding: 288px;
+    padding-top: 50px;
+    padding-left: 80px;
 
     background-image: url("./images/bg.jpg");
     background-repeat: no-repeat;
@@ -119,7 +130,7 @@ p+p {
 }
 
 .welcome .container {
-    position: relative;
+    /*position: relative;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,6 +139,9 @@ p+p {
 }
 
 .welcome__inner-wrapper {
+    margin-top: 535 px;
+    margin-left: 75px;
+
     max-width: 517px;
     max-height: 235px;
     padding-right: 170px;
@@ -136,16 +150,19 @@ p+p {
 }
 
 .welcome__subtitle {
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 200px;
+
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
-
     letter-spacing: -5%;
     text-align: right;
     text-transform: uppercase;
-    position: absolute;
+    /*position: absolute;
     left: 29%;
-    bottom: 66%;
+    bottom: 66%;*/
 }
 
 .welcome__bg {
@@ -160,19 +177,21 @@ p+p {
 
 .welcome__title {
     width: 485px;
-    height: 63px;
+    height: 55px;
 
 }
 
 .welcome__inform {
-    margin-bottom: 35px;
+    padding-top: 5px;
+    margin-bottom: 10px;
     display: flex;
     width: 469 px;
     height: 20px;
 }
 
 .welcome__line {
-    width: 183px;
+
+    width: 180px;
     height: 1px;
 
     padding-top: 20px;
@@ -189,6 +208,10 @@ p+p {
 }
 
 .welcome__ia {
+    padding-top: 15px;
+    max-width:469px ;
+    border-width: 1px;
+    
     margin-bottom: 19px;
     width: 469 px;
     height: 64 px;
@@ -209,6 +232,11 @@ p+p {
 }
 
 .welcome__phone {
+    /*object-fit: none;*/
+
+
+
+
     max-width: 340px;
     height: 697;
     overflow: hidden;
@@ -315,20 +343,42 @@ p+p {
     color: #FFFFFF;
 }
 
+.phone__img {
+
+}
+
+.phone__img .container {
+
+}
+
+.phone__img-one {
+    object-fit: none;
+    padding-right: 150px;
+
+}
+
+.phone__img-two {
+    object-fit: none;
+
+}
+
+
+
 .sale {
     background-color: #EDECEC;
-
 
 }
 
 .sale .container {
- display: flex;
+    min-height: 390px;
+    padding-top: 80px;
+    padding-bottom: 0;
+    padding-left: 350px;
 }
 
 .sale-inform__place {
-    max-width: 550px;
-    max-height: 193px;
-    padding-left: 150px;
+
+
 
 }
 
@@ -336,49 +386,31 @@ p+p {
     font-weight: 700;
     font-size: 32px;
     text-transform: uppercase;
-    padding-top: 80px;
 
 
 }
 
 .sale__text {
+    max-width: 550px;
+    max-height: 124px;
+
+
     /*font-family: Futura PT;*/
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    word-spacing: 20px;
+    word-spacing: 5px;
     padding-top: 30px;
-
-}
-
-.sale__phone1 {
-    display: block;
-    position: absolute;
-    top: 70%%; left: 40%;
-
-}
-
-.sale__img-one {
-
-
-
-}
-
-.sale__phone2 {
-    display: block;
-    position: relative;
-}
-
-.sale__img-two {
 
 }
 
 
 
 .partner__title{
+    display: flex;
+
     padding-top: 70px;
-    padding-left: 610px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 
 
 }
@@ -444,16 +476,27 @@ p+p {
 
 
 .partners__question {
-    align-items: center;
-    padding: 150px 0;
+    display: flex;
+    padding: 60px 0;
+
+
 
 }
 
 .partners__question .container {
 
+    align-items: center;
+    justify-content: center;
+
 }
 
 .partners__question-text {
+    margin-top: 10px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     /*font-family: Futura PT;*/
     font-weight: 400;
     font-size: 24px;
@@ -467,12 +510,17 @@ p+p {
 }
 
 .partners__question-btn {
+    margin-top: 40px;
+    margin-left: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-weight: 600;
     font-size: 18px;
+    line-height: 20px;
+    word-spacing: 20px;
     /* font-family: FuturaDemic;*/
 
     width: 336px;
@@ -489,8 +537,8 @@ p+p {
 }
 
 .footer__inform {
-    justify-content: space-between;
-    box-sizing: border-box;
+   /* justify-content: space-between;
+    box-sizing: border-box;*/
     max-height: 133px;
     text-decoration-skip-ink: none;
 
@@ -506,15 +554,13 @@ p+p {
 
 
 .footer__inform .container {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: flex;
+
 
 }
 
 .footer__inform-year {
-    margin-left: 20px;
-    margin-bottom: 10px;
+    height: 20px;
    
 
     font-weight: 400;
@@ -525,7 +571,9 @@ p+p {
 
 }
 
+
 .footer__inform-text {
+
     margin: 10px 20px;
 
     font-weight: 400;
@@ -535,5 +583,49 @@ p+p {
     color: #B5B5B5;
     text-decoration: underline;
     
+
+}
+
+.footer__inform-underline {
+    margin-top: 40px;
+
+    
+}
+
+
+
+
+.footer__inform .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    word-spacing: -5%;
+
+    width: 234px;
+    height: 40px;
+
+    background: none;
+    border-style: solid;
+    border-radius: 5px;
+
+    transition: opacity 0.3s;
+}
+
+
+.footer__inform__contact-img {
+    width: 22px;
+    height: 20px;
+
+    padding: 5px 10px;
+    
+
+}
+
+.footer__inform__contact-text {
 
 }
