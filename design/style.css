@@ -354,7 +354,7 @@ p+p {
 .sale__phone1 {
     display: block;
     position: absolute;
-    top: 50%; left: 40%;
+    top: 70%%; left: 40%;
 
 }
 
@@ -489,14 +489,34 @@ p+p {
 }
 
 .footer__inform {
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-height: 133px;
+    text-decoration-skip-ink: none;
 
+    margin-bottom: 0;
+    padding: 50px;
+
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
+
+
 .footer__inform .container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
 
 }
 
 .footer__inform-year {
+    margin-left: 20px;
+    margin-bottom: 10px;
+   
+
     font-weight: 400;
     font-size: 16px;
     word-spacing: -5%;
@@ -506,6 +526,8 @@ p+p {
 }
 
 .footer__inform-text {
+    margin: 10px 20px;
+
     font-weight: 400;
     font-size: 13px;
     word-spacing: -5%;
