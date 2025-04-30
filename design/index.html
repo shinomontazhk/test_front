@@ -31,7 +31,7 @@
         <section class="welcome">
             <div class="container">
                 <div class="welcome__inner-wrapper">
-                    <div>
+                    <div class=" ">
                         <h5 class="welcome__subtitle">Только лучшие акции</h5>
                         <img src="./images/only_popup.png" alt="фоновый элемент" class="welcome__bg">
                     </div>
@@ -47,13 +47,19 @@
                         <li><a href="#!"> <img src="./images/download_android.png" alt="Скачать на Android"
                                     class="welcome__download"> </a></li>
                     </ul>
-                </div>
-                <div>
-                    <img src="./images/_phone1.png" alt="приложение открыто на телефоне" class="welcome__phone">
+                    </div>
+                    <div class="welcome-img">
+                        <img src="./images/_phone1.png" alt="приложение открыто на телефоне" class="welcome-img__phone">
+                    </div>
                 </div>
             </div>
         </section>
         <section class="plus-list">
+           <!-- <a href="#!" class="btn">
+                <p class="plus-list__btn-text">Вниз</p>
+                <img src="./images/arrow_down.png" alt="стрелка вниз" class="plus-list__btn-arrow">
+                <p class="plus-list__btn-text">Вниз</p>
+            </a>-->
             <div class="container">
                 <div class="plus-list__items">
                     <img src="./images/like.png" alt="большой палец вверх" class="plus-list__img">
@@ -94,11 +100,17 @@
                         <h2 class="functional-list__title">Избранное</h2>
                     </li>
                     <li>
-                      <img src="./images/phone2_ref.png" alt="раздел акций на телефоне"
-                            class="functional-list__phone">
-                    </li>
+                        <img src="./images/phone2_ref.png" alt="раздел акций на телефоне"
+                        class="phone__img-1">
+                    </li>    
                     <li>
                         <h2 class="functional-list__htitle">Профиль акции</h2>
+                        <!--<p class="functional-list__text">Вы всегда получите полную информацию об акции&#58; подробное
+                            описание&#44;
+                            бренд&#44; магазины и торговые центры где походит акция&#46;</p>
+                        <p class="functional-list__text">Также доступна возможность сразу перейти на сайт товара и
+                            купить в
+                            рамках действующей акции&#46;</p>-->
                     </li>
                     <li>
                         <h2 class="functional-list__title">Подписки</h2>
@@ -110,18 +122,15 @@
                         <h2 class="functional-list__title">Моя лента</h2>
                     </li>
                 </ul>
-                <p class="functional-list__text">Вы всегда получите полную информацию об акции&#58; подробное
-                    описание&#44;
-                    бренд&#44; магазины и торговые центры где походит акция&#46;</p>
-                <p class="functional-list__text">Также доступна возможность сразу перейти на сайт товара и
-                    купить в
-                    рамках действующей акции&#46;</p>
+
             </div>
         </section>
         <section class="phone__img">
             <div class="container">
-                <img src="./images/phone3_2.png" alt="на телефоне открыт раздел избранное" class="phone__img-one">
-                <img src="./images/phone3_1.png" alt="на телефоне открыт раздел каталог" class="phone__img-two">
+                <div class="img-phone">
+                    <img src="./images/phone3_2.png" alt="на телефоне открыт раздел избранное" class="phone__img-one">
+                    <img src="./images/phone3_1.png" alt="на телефоне открыт раздел каталог" class="phone__img-two">
+                </div>
             </div>
         </section>
         <section class="sale">
@@ -129,12 +138,10 @@
                 <div class="sale-inform__place">
                     <h2 class="sale__title">Наши Акции</h2>
                     <p class="sale__text">Каждый день в Москве проходят распродажи&#46; В акциях и скидках дня могут принимать участие любые группы товаров&#46; Особенно популярны распродажи одежды и обуви&#44; распродажи мебели&#44; распродажи сумок&#46;</p>
-                </div>
-            </div>
         </section>
         <section class="partner__title" >
             <div class="container">
-            <h2 class="partner__title-text">Наши партнеры</h2>
+            <h2 class="partner__title-text">Наши партнёры</h2>
             </div>
         </section>
         <section class="partner">
@@ -153,23 +160,27 @@
             </div>
         </section>
         <section class="partners__question">
-            <div class="container">
-            <p class="partners__question-text">Хотите стать партнёром?
-            <br>Напишите нам и про ваши акции узнают все&#46;</br></p>
-            <a href="#!" class="partners__question-btn">СТАТЬ ПАРТНЕРОМ</a>
+                <div class="container">
+                <p class="partners__question-text">Хотите стать партнёром?
+                <br>Напишите нам и про ваши акции узнают все&#46;</br></p>
+                <a href="#!" class="partners__question-btn">СТАТЬ ПАРТНЕРОМ</a>
             </div>
         </section>
         <footer class="footer__inform"> 
             <div class="container"> 
-            <p class="footer__inform-year">2016 &copy; shopguide</p>
-            <div class="footer__inform-underline">
-                <a href="#!" class="footer__inform-text">политика конфиденциальности</a>
-                <a href="#!" class="footer__inform-text">правила пользования</a>
-            </div>
-            <a href="#!" class="btn"> 
-                <img src="./images/contact.png" alt="иконка диалога" class="footer__inform__contact-img">
-                <p class="footer__inform__contact-text">Связаться с нами</p>
-            </a>
+                <div class="footer__inform-all">
+                    <p class="footer__inform-year">2016 &copy; shopguide</p>
+                    <div class="footer__inform-underline">
+                        <a href="#!" class="footer__inform-title1">политика конфиденциальности</a>
+                        <a href="#!" class="footer__inform-title2">правила пользования</a>
+                    </div>
+                </div>
+                <div class="footer__inform-button">
+                    <a href="#!" class="btn"> 
+                        <img src="./images/contact.png" alt="иконка диалога" class="footer__inform__contact-img">
+                        <p class="footer__inform__contact-text">Связаться с нами</p>
+                    </a>
+                </div>
             </div>
         </footer>
     </main>
