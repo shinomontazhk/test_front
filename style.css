@@ -390,7 +390,12 @@ p+p {
 
 
 .phone__img-one {
+    position: relative;
+    right: 250px;
+    bottom: 160px;
     
+    width: 302px;
+    height: 578px;
 
 
 }
@@ -398,7 +403,7 @@ p+p {
 .phone__img-two {
     object-fit: none;
 
-    margin-left: 800px;
+    margin-left: 920px;
     margin-bottom: -450px;
 }
 
@@ -446,6 +451,10 @@ p+p {
     line-height: 30px;
     word-spacing: 5px;
     padding-top: 30px;
+
+    position: relative;
+    top: 50px;
+    right: 250px;
 
 }
 
