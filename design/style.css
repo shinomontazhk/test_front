@@ -139,6 +139,8 @@ p+p {
     justify-content: space-between;
     align-items: center;
 
+    overflow: hidden;
+
 
 }
 
@@ -241,6 +243,11 @@ p+p {
 }
 
 .welcome-img {
+    height: 760px;
+
+    margin: 0;
+    padding: 0;
+
 
     
 
