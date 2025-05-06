@@ -334,7 +334,7 @@ p+p {
 
 .functional-list .container {
     min-width: 1550px;
-    max-height: 430px;
+    height: 430px;
 
     padding: 0;
     margin: 5px, 50px;
@@ -349,7 +349,7 @@ p+p {
 
 .functional-list__title {
     justify-content: space-between;
-    padding-top: 80px;
+    padding-top: 60px;
     font-weight: 700;
     font-size: 32px;
     opacity: 70%;
@@ -359,16 +359,35 @@ p+p {
 
 .functional-list__htitle {
     justify-content: space-between;
-    padding-top: 80px;
+    padding-top: 60px;
     font-weight: 700;
     font-size: 32px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
 
+.functional-list__line {
+    width: 316px;
+    height: 5px;
+
+}
+
+.functional-list__inform {
+    position: relative;
+    bottom: 450px;
+    left: 595px;
+
+
+    min-width: 687 px;
+
+}
 
 .functional-list__text {
-    max-width: 687 px;
+    width: 687px;
+    height: 134px;
+
+    margin-top: 0;
+
 
     /*font-family: FuturaPT;*/
     font-weight: 400;
