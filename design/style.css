@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family:FuturaDemiC;
-    src: url(./fonts/futurademic-webfont.woff2);
+    src: 
+    url('./fonts/futurademic-webfont.eot'), 
+    url('./fonts/futurademic-webfont.woff'),
+    url('./fonts/futurademic-webfont.woff2'), 
+    url('./fonts/futurademic-webfont.ttf'), 
+    url('./fonts/futurademic-webfont.svg');
+    font-style:normal;
+    font-weight: normal; 
+
 }
 @font-face {
     font-family: Futura PT;
-    src: url(./fonts/futurabookc-webfont.woff2);
+    src: 
+    url('./fonts/futurabookc-webfont.eot'), 
+    url('./fonts/futurabookc-webfont.woff'), 
+    url('./fonts/futurabookc-webfont.woff2'),
+    url('./fonts/futurabookc-webfont.ttf'),
+    url('./fonts/futurabookc-webfont.svg');
+    font-style:normal;
+    font-weight: normal; 
+;
 }
 
 
@@ -67,7 +83,7 @@ p+p {
     align-items: center;
     justify-content: center;
 
-    /*font-family: FuturaDemiC;*/
+    font-family: FuturaDemiC;
     font-weight: 600;
     font-size: 18px;
 
@@ -343,7 +359,7 @@ p+p {
 }
 
 .plus-list__desc {
-    /*font-family:FutureDemic;*/
+    font-family:FutureDemic;
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
@@ -414,7 +430,7 @@ p+p {
     padding-top: 10px;
 
 
-    /*font-family: FuturaPT;*/
+    font-family: FuturaPT;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
@@ -460,7 +476,7 @@ p+p {
     position: relative;
     object-fit: none;
 
-    left: 900px;
+    left: 850px;
     top: 195px;
 
     /*margin-left: 920px;
@@ -481,7 +497,7 @@ p+p {
     max-height: 390px;
     padding-top: 80px;
     padding-bottom: 0;
-    padding-left: 300px;
+    padding-left: 200px;
 
     display: flex;
 }
@@ -500,6 +516,8 @@ p+p {
     font-size: 32px;
     text-transform: uppercase;
 
+    padding-top: 15px;
+
 
 }
 
@@ -508,11 +526,10 @@ p+p {
     max-height: 124px;
 
 
-    /*font-family: Futura PT;*/
+    font-family: Futura PT;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    word-spacing: 5px;
     padding-top: 30px;
 
     position: relative;
@@ -600,7 +617,7 @@ p+p {
 
 .partners__question {
     display: flex;
-    padding: 60px 0;
+    padding: 50px 0;
 
 
 
@@ -614,26 +631,25 @@ p+p {
 }
 
 .partners__question-text {
-    margin-top: 10px;
-    margin-left: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /*font-family: Futura PT;*/
+    font-family: Futura PT;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    word-spacing: 20px;
+
 
     width: 441px ;
     height: 60px;
     text-align: center;
+    white-space: nowrap;
 
 }
 
 .partners__question-btn {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 40px;
 
     display: flex;
@@ -644,7 +660,7 @@ p+p {
     font-size: 18px;
     line-height: 20px;
     word-spacing: 20px;
-    /* font-family: FuturaDemic;*/
+    font-family: FuturaDemic;
 
     width: 336px;
     height: 60px;
@@ -772,6 +788,23 @@ p+p {
 }
 
 .footer__inform__contact-text {
+
+
+}
+
+
+@media (max-width: 390px) {
+
+    .header .container {
+        flex-direction: column;
+
+    }
+
+    .welcome__inner-wrapper {
+        flex-direction: column;
+        gap: 10px;
+
+    }
 
 
 }
