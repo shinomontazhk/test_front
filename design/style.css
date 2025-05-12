@@ -21,7 +21,6 @@
     url('./fonts/futurabookc-webfont.svg');
     font-style:normal;
     font-weight: normal; 
-;
 }
 
 
@@ -131,6 +130,8 @@ p+p {
 
 .header__list .btn {
     border-width: 3px;
+    justify-content: flex-end;
+
 
 }
 
@@ -297,7 +298,8 @@ p+p {
 
     position: relative;
     bottom: 80px;
-    left: 650px;
+
+    margin: auto;
     
     border-radius: 15px;
     background: #29D3D1;
@@ -660,7 +662,6 @@ p+p {
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
-    word-spacing: 20px;
     font-family: FuturaDemic;
 
     width: 336px;
